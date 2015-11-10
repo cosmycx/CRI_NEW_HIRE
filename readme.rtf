@@ -1,0 +1,175 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1347\cocoasubrtf570
+{\fonttbl\f0\fnil\fcharset0 Cambria;\f1\froman\fcharset0 TimesNewRomanPSMT;}
+{\colortbl;\red255\green255\blue255;\red255\green0\blue0;\red0\green0\blue255;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid1\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid101\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid2}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}
+{\info
+{\author Zack Cerny}
+{\*\company CRI}}\vieww24780\viewh19560\viewkind1\viewscale150
+\deftab720
+\pard\pardeftab720\ri0
+
+\f0\b\fs24 \cf0 CRI NEW HIRE CODING TEST\
+\pard\pardeftab720\ri0
+
+\f1\b0 \cf0 \
+\
+\pard\pardeftab720\ri0
+
+\f0\b \cf0 REQUIREMENTS: \
+\pard\pardeftab720\ri0
+
+\f1\b0 \cf0 \
+\pard\pardeftab720\ri0
+
+\f0 \cf0 Code out the included PSD, following the instructions for any animations that are on the page. 
+\b \cf2 THE SITE MUST BE RESPONSIVE
+\b0 \cf0 . There is no responsive layout designed, but it is fairly self-explanatory on how to handle it (everything in a single column).\
+\
+The 
+\b \cf2 site must use the included grid
+\b0 \cf0 . This grid is one that we use in-house to develop our sites.\
+\
+LESS is preferred; SASS or regular CSS is fine (the grid has a compiled out version if needed).\
+\
+Other than what we provide, you must use your own code for this test. You are not allowed to use any plugins. \
+\
+Assets may be found in the _assets folder. \
+\
+\pard\pardeftab720\ri0
+
+\b \cf0 GRID INFORMATION:\
+\pard\pardeftab720\ri0
+
+\f1\b0 \cf0 \
+\pard\pardeftab720\ri0
+
+\f0 \cf0 The grid is a 12 column semantic grid. What this means is that instead of declaring columns and column sizes inside of the HTML, you declare them inside of the LESS file using a mixing. For example,\
+\
+HTML:  \
+\
+<div class=\'93container\'94>\
+	<div class=\'93row\'94>\
+		<div class=\'93content\'94> </div>\
+	</div>\
+	\
+	<div class=\'93row\'94>\
+		<div class=\'93contentOffset\'94></div>\
+	</div>\
+</div>
+\b\fs20 \
+\
+
+\b0\fs24 LESS:\
+\
+.content \{\
+      .columns(12);\
+\}\
+\
+\
+\
+.contentOffset \{\
+    .columns(11);\
+    .offset(1);\
+\}\
+\
+Notice that for an offset you must add an additional column to make up for it. So, for example, a 10 column offset-by-one element will have a .columns(11) and a .offset(1).
+\b\fs20 \
+\pard\pardeftab720\ri0
+
+\f1 \cf0 \
+\
+\
+\pard\pardeftab720\ri0
+
+\f0\fs24 \cf0 INSTRUCTIONS:\
+\
+Section 1: Header\
+\pard\pardeftab720\ri0
+
+\f1\b0 \cf0 \
+\pard\pardeftab720\ri0
+
+\f0 \cf0 The header is a 
+\b full-screen width/height
+\b0 . The background must fit.\
+\uc0\u8232 On page load, the intro text (
+\b CRI NEW HIRE) 
+\b0 should fade in.\
+\
+The scroll arrow should use font-awesome 
+\i (included in the boilerplate) 
+\i0 for the down arrow. 
+\b (bonus: do a continuous \'91bounce\'92 animation on the arrow)
+\f1\b0 \
+
+\f0 The top bar should be fixed.\
+\
+\pard\pardeftab720\ri0
+
+\f1 \cf0 \
+\pard\pardeftab720\ri0
+
+\b\fs20 \cf0 \
+\pard\pardeftab720\ri0
+
+\f0\fs24 \cf0 SECTION 2 (CIRCLES):\
+\
+\pard\pardeftab720\ri0
+
+\b0 \cf0 Upon scrolling down to the second section, 
+\b animate in each circle one at a time. 
+\b0 The animation is a 
+\b bounce up from the bottom
+\b0  animation. \
+\
+The circles must be built using CSS and background-image, you may not just save them out as images.\
+\
+\pard\pardeftab720\ri0
+
+\b \cf0 ON HOVER
+\b0 :\
+One circle must go gray scale\
+One circle must darken\
+One circle must have a sepia tone applied to it\
+\
+\
+
+\b SECTION 3 (CHARTS):\
+\
+\pard\pardeftab720\ri0
+
+\b0 \cf0 Section 3 is an 
+\b optional
+\b0  section. You must use the supplied SVG to animate the charts.\
+\
+The animation is to 
+\b animate each bar up one at a time, and fade in the numbers at the end.
+\b0  The charts should each do this animation one at a time. (So chart 1 animates, finishes, chart 2 animates, finishes, etc.)\
+\
+If you do not choose to animate the charts than just include them on the page like in the design.\
+\
+\
+\pard\pardeftab720\ri0
+
+\b \cf0 WHEN YOU ARE DONE:\
+\
+\pard\pardeftab720\ri0
+
+\b0 \cf0 When you are done do one of two things:\
+\
+\pard\pardeftab720\li720\fi-360\ri0
+\ls1\ilvl0\cf0 1.	Upload the site files to dropbox and send a link to zack.cerny@corporatereport.com
+\f1 \
+\pard\pardeftab720\li720\ri0
+\cf0 \
+\pard\pardeftab720\li720\fi-360\ri0
+\ls2\ilvl0
+\f0 \cf0 2.	Push the files to a GIT repo and send a link to zack.cerny@corporatereport.com
+\f1 \
+\pard\pardeftab720\ri0
+\cf0 \
+\
+\
+}

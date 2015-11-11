@@ -1,0 +1,125 @@
+body{
+		min-width: 320px;
+		font-family: 'Open Sans', sans-serif;	
+	}
+	/* ########################### */
+	nav{
+		background-color: #1B2726;
+		color: #1B2726;
+		color: #1B2726;
+		position: fixed;
+		z-index: 500;
+		width: 100%;
+	}
+	/* ########################### */
+	header{
+		position: relative;
+		margin-bottom: -5px;
+	}
+	header>div{
+		width: 100%;
+		position: absolute;
+		top: 45%;
+		text-align:center;	
+		color: white;
+		font-size: 1.5em;
+	}
+	header div>h1{
+		border: 1px solid white;
+		margin:0 auto;
+		width: 6.5em;
+		animation: fadeIn 2s linear;
+	}
+	header>img{
+		width: 100%;
+	}
+	#scroll{
+		top:84%;
+		line-height: 10%;
+	}
+	#scroll>p{
+		font-size: .25em;
+	}
+	#scroll>i{
+    animation-name: pulse;
+   	animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+   	animation-timing-function: linear;
+	}
+	@keyframes pulse {    
+	    0% {transform: scale(1);}
+	    50% {transform: scale(1.4);}
+	    100% {transform: scale(1);}
+	}
+	@keyframes fadeIn{
+		0%{opacity:0;}
+		100%{opacity:100;}
+	}
+	/* ########################### */
+	section{
+		overflow: hidden; 
+		padding: 50px;
+	}
+	article{
+		padding: 10px;
+	}
+	@media (min-width: 650px) {
+		article {
+		   float:left;
+		}
+	 	section.circles article{
+	 		width: 33%;
+	 	}
+	 	section.charts article{
+	 		width: 25%;
+	 	}
+	}
+	section img{
+		display: block;
+		width: 150px;
+		height: 150px;
+		margin: 0 auto;
+	}
+	section.circles{
+		background-color: #116260;
+	}
+	section.circles article img{
+		border-radius: 50%;
+		border: 2px solid white;
+		position: relative;
+		-webkit-filter: none;
+	}
+	section.circles article img:hover{
+		border: none;
+	}
+	article.gray img:hover{
+		-webkit-filter: grayscale(100%);
+	}
+	article.darken img:hover{
+		-webkit-filter: brightness(0.3);
+	}
+	article.sephia img:hover{
+		-webkit-filter: sepia(100%);
+	}
+	/* ########################### */
+
+	@keyframes bounce {
+	    0%, 50%, 100% {transform: translateY(0);}
+	    15% {transform: translateY(-20px);}
+	    75% {transform: translateY(-5px);}
+	}
+
+	.bounce {
+    animation: bounce 1s linear;
+	}
+	/* ########################### */
+	article.bars rect, article.bars text{
+		display: none;
+	}
+	.bars rect{
+		fill: teal;
+	}
+	svg{
+		display: block;
+		margin: 0 auto;
+	}
